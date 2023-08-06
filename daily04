@@ -1,1 +1,1001 @@
 daily04
+ 1298  ls -ld ../
+ 1299  cd ..
+ 1300  ls -ld
+ 1301  ls -l
+ 1302  cd mango/
+ 1303  cat iList.txtr 
+ 1304  ls
+ 1305  rm iList.txtr 
+ 1306  ls -l ../ | tail -5 | tee iList.txt
+ 1307  ls -ld ../*
+ 1308  ls -l ../ | awk '{print $1}'
+ 1309  ls -ld ../* | awk '{print $1}'
+ 1310  ls -ld ../* | awk '{print $1}' | tee -a iList.txt 
+ 1311  cat iList.txt 
+ 1312  ls -ld ../* | awk '{print $6}'
+ 1313  ls -ld ../* | awk '{print $6-8}'
+ 1314  ls -ld ../* | awk '{print $6,$7,$8}'
+ 1315  ls -ld ../* | awk '{print $6,$7,$8}' | tee -a iList.txt 
+ 1316  cat iList.txt 
+ 1317  chmod u+a 
+ 1318  chmod u=a,g=rw,o=r iList.txt 
+ 1319  chmod u=a g=rw o=r iList.txt 
+ 1320  chmod u=a  iList.txt 
+ 1321  ls --help
+ 1322  ls -ld 
+ 1323  ls -ld  *
+ 1324  ls -l  *
+ 1325  ls -l  
+ 1326  ls -l  *
+ 1327  ls -l ../*
+ 1328  ls -l *
+ 1329  chmod u=rwx,g=rw,o=r iList.txt 
+ 1330  ls iList.txt 
+ 1331  ls -l iList.txt 
+ 1332  chmod 777 iList.txt 
+ 1333  ls -l iList.txt 
+ 1334  touch {111..777}.txt
+ 1335  ls -l 
+ 1336  rm {111..777}.txt
+ 1337  ls -l 
+ 1338  rm {111,222,333,444,555,666,777}.txt
+ 1339  touch {111,222,333,444,555,666,777}.txt
+ 1340  ls -l 
+ 1341  chmod 777 111.txt 
+ 1342  chmod 777 111.txt 222.txt
+ 1343  ls -l 
+ 1344  chmod 444 333.txt 
+ 1345  ls -l 
+ 1346  chmod 661 444.txt 
+ 1347  ls -l 
+ 1348  chmod 464 444.txt 
+ 1349  chmod 661 444.txt 
+ 1350  chmod 464 555.txt 
+ 1351  ls -l 
+ 1352  chmod 464 666.txt 7 
+ 1353  chmod 444 666.txt 777.txt 
+ 1354  ls -l 
+ 1355  mv iList.txt  ../
+ 1356  cd ..
+ 1357  ls -l
+ 1358  ls -ld *
+ 1359  ls -ld * | cut -d " " -f1 | grep w
+ 1360  mv iList.txt  mango/
+ 1361  cd mango/
+ 1362  ls -la
+ 1363  ls -ld * | cut -d " " -f1 | grep w
+ 1364  ls -ld * | cut -d " " -f1 -c 5-7
+ 1365  ls -ld * | cut -d " " -f1 -c 5
+ 1366  ls -ld * | cut -d " "  -c 5
+ 1367  ls -ld * | cut -d " "  -c5
+ 1368  ls -ld * | cut -d " " -f1 
+ 1369  ls -ld * | cut -d " " -f1 -c1
+ 1370  ls -ld * | cut -d " " -c1
+ 1371  ls -ld * | cut -c1
+ 1372  ls -ld * | cut -d " " -f1 -c1
+ 1373  ls -ld * | cut -d " " -f1 
+ 1374  ls -ld * | cut -d " " -f1 | cut -c5-7
+ 1375  ls -ld * | cut -c5-7
+ 1376  touch .secret.txt
+ 1377  ls -la
+ 1378  ls -l
+ 1379  cat -e "15/n39/n50/n89/n200/n" >> numbers.txt
+ 1380  cat -e "15\n39\n50\n89\n200\n" >> numbers.txt
+ 1381  echo -e "15\n39\n50\n89\n200\n" >> numbers.txt
+ 1382  cat numbers.txt 
+ 1383  echo -e "15\n39\n50\n89\n200" > numbers.txt
+ 1384  cat numbers.txt 
+ 1385  sort -n numbers.txt 
+ 1386  sort -nr numbers.txt 
+ 1387  ls -ld * | cut -c2-4
+ 1388  history 
+ 1389  rm --help
+ 1390  sort numbers.txt 
+ 1391  sort -n numbers.txt 
+ 1392  cat numbers.txt 
+ 1393  sort --help
+ 1394  echo "hello world" >> helloworld.sh
+ 1395  ./helloworld
+ 1396  ls
+ 1397  .\helloworld
+ 1398  ./helloworld
+ 1399  ./helloworld.sh
+ 1400  chmod +x helloworld.sh 
+ 1401  ./helloworld.sh
+ 1402  ./helloworld.
+ 1403  ./helloworld
+ 1404  ./helloworld.sh
+ 1405  rm helloworld.sh 
+ 1406  nano helloworld.sh
+ 1407  ./helloworld.sh
+ 1408  chmod +x helloworld.sh 
+ 1409  ./helloworld.sh
+ 1410  ls -l helloworld.sh 
+ 1411  nano helloworld.sh
+ 1412  which bash
+ 1413  nano helloworld.sh
+ 1414  ./helloworld.sh
+ 1415  nano helloworld.sh
+ 1416  ./helloworld.sh
+ 1417  nano helloworld.sh
+ 1418  ./helloworld.sh
+ 1419  nano helloworld.sh
+ 1420  ./helloworld.sh
+ 1421  which bash
+ 1422  ./helloworld.sh
+ 1423  history | grep git
+ 1424  cd 
+ 1425  cd git-basics-practice/
+ 1426  ls
+ 1427  ls =la
+ 1428  ls -la
+ 1429  rm *
+ 1430  ls -la
+ 1431  git push origin main
+ 1432  git remote -v
+ 1433  git status 
+ 1434  git add .
+ 1435  git commit "delete files"
+ 1436  git commit -m "delete files"
+ 1437  git push origin main
+ 1438  git status 
+ 1439  git remote -v
+ 1440  touch {file1,2,3}.txt
+ 1441  git add .
+ 1442  git commit -m "first commit"
+ 1443  ls
+ 1444  echo "hello world" >> 2.txt 
+ 1445  add .
+ 1446  git add .
+ 1447  git commit -m "second commit"
+ 1448  git push origin main
+ 1449  git pull origin main 
+ 1450  ls -l
+ 1451  cat 2.txt 
+ 1452  git remote -v
+ 1453  history | grep git
+ 1454  cd
+ 1455  cd BIG/
+ 1456  cd clothes/mango/
+ 1457  ls -l
+ 1458  ls -ld
+ 1459  ls -ld *
+ 1460  ls -ld ../*
+ 1461  ls -ld ../
+ 1462  ls -ld ..
+ 1463  ls -ld ../*
+ 1464  ls -ld ../* | awk '{print $1}'
+ 1465  ls -ld ../* | awk '{print $2}'
+ 1466  ls -ld ../* | awk '{print $5}'
+ 1467  ls -ld ../* | awk '{print $6,7}'
+ 1468  ls -ld ../* | awk '{print $6,7,8}'
+ 1469  ls -ld ../* | awk '{print $6,$7,$8}'
+ 1470  ls -ld ../* | awk '{print $1}' | cut -c2-4
+ 1471  ls -ld ../* | awk '{print $1}' | cut -c3-5
+ 1472  shutdown +0
+ 1473  cd BIG/clothes/mango/
+ 1474  ls -la | awk '{print NF}'
+ 1475  ls -la
+ 1476  ls  | awk '{print NF}'
+ 1477  ls 
+ 1478  ls -la | awk '{print NF}'
+ 1479  ls -l | awk '{print NF}'
+ 1480  pwd | awk '{print NF}'
+ 1481  ls 
+ 1482  ls  | awk '{print NF}'
+ 1483  pwd | awk '{print NF}'
+ 1484  ls -l | awk '{print NF}'
+ 1485  shutdown +0
+ 1486  cd BIG/clothes/mango/
+ 1487  ls -ld *
+ 1488  ls -ld * .*
+ 1489  ls -ld  .*
+ 1490  ls -ld * .*
+ 1491  ls -l
+ 1492  tree
+ 1493  ls -la
+ 1494  ls -ld * .*
+ 1495  ls -l
+ 1496  ls -ld * .*
+ 1497  ls -la
+ 1498  ls -ld
+ 1499  ls -l *
+ 1500  ls -l * .*
+ 1501  ls -ld * .*
+ 1502  ls -l *
+ 1503  ls -l
+ 1504  ls -l *
+ 1505  ls -l * | cut -c2-4
+ 1506  ls -l * | cut -c5-7
+ 1507  ls -l * | cut -c5-7 | grep w
+ 1508  ls -l *
+ 1509  shutdown +0
+ 1510  cd BIG/clothes/mango/
+ 1511  wget https://www.gutenberg.org/files/730/730-0.txt
+ 1512  ls -l
+ 1513  wget https://www.gutenberg.org/files/730/730-0.txt .
+ 1514  ls -l
+ 1515  rm 730-0.txt.1 
+ 1516  cat 730-0.txt 
+ 1517  cat 730-0.txt more
+ 1518  cat 730-0.txt | more
+ 1519  cat 730-0.txt | less
+ 1520  ls
+ 1521  sort 730-0.txt 
+ 1522  sort 730-0.txt | uniq -c
+ 1523  sort 730-0.txt | uniq -ci
+ 1524  sort 730-0.txt | uniq -c | sort -nr
+ 1525  sort 730-0.txt | uniq -c | sort -nr | more
+ 1526  sort 730-0.txt | uniq -c | sort -k1,1nr -k2b | head -n 1 | cut -d\" -f2
+ 1527  word2
+ 1528  sort 730-0.txt | uniq -c | sort -k1,1nr -k2b 
+ 1529  sort 730-0.txt | uniq -c | sort -k1,1nr -k2b | more
+ 1530  $ sort file | uniq -c | sort -k1,1nr -k2b | head -n 1 | 
+ 1531  $ sort file | uniq -c | sort -k1,1nr -k2b | head -n 1 
+ 1532  $ sort file | uniq -c | sort -k1,1nr -k2b
+ 1533  sort 730-0.txt | uniq -c | sort -k1,1nr -k2b 
+ 1534  $ sort file | uniq -c | sort -k1,1nr -k2b | head -n 1 
+ 1535  $ sort file | uniq -c | sort -k1,1nr -k2b| head -n 1 
+ 1536  $ sort file | uniq -c | sort -k1,1nr -k2b
+ 1537  sort 730-0.txt | uniq -c | sort -k1,1nr -k2b 
+ 1538  $ sort file | uniq -c | sort -k1,1nr -k2b
+ 1539  sort 730-0.txt | uniq -c | sort -k1,1nr -k2b | head -n 1 
+ 1540  sort 730-0.txt | uniq -c | sort -k1,1nr -k2b
+ 1541  sort 730-0.txt | uniq -c | sort -k1,1nr -k2b | head -n 1 
+ 1542  sort 730-0.txt | uniq -c | sort -k1,1nr -k2b | more
+ 1543  sort 730-0.txt | uniq -c | more
+ 1544  clear
+ 1545  sort 730-0.txt | uniq -c | sort -rn | head -n 12
+ 1546  sort 730-0.txt | uniq -c |
+ 1547  sort 730-0.txt | uniq -c 
+ 1548  sort 730-0.txt | uniq -c | sort -rni | head -n 12
+ 1549  sort 730-0.txt | uniq -ci | sort -rn | head -n 12
+ 1550  sort 730-0.txt | uniq -c | sort -rn | head -n 12
+ 1551  sort 730-0.txt 
+ 1552  sort 730-0.txt | more
+ 1553  clear
+ 1554  sort 730-0.txt | uniq -c | sort -rn | head -n 12
+ 1555  sort 730-0.txt | uniq -c | sort -rn | head -n 20
+ 1556  sort 730-0.txt | uniq -c  | head -n 20
+ 1557  sort 730-0.txt | uniq -c | sort -rn | head -n 20
+ 1558  sort 730-0.txt | uniq -c | more
+ 1559  sort 730-0.txt | uniq -c | grep 6
+ 1560  sort 730-0.txt | uniq -c | grep you
+ 1561  sort 730-0.txt | uniq -c | sort -n
+ 1562  sort 730-0.txt | uniq -c | grep "you?"
+ 1563  sort 730-0.txt | uniq -c | grep "you?" | sort -nr
+ 1564  tr -cs 'a-zA-Z0-9' '\n' <730-0.txt 
+ 1565  tr -cs 'a-zA-Z0-9' '\n' <730-0.txt | sort -nr | uniq -c
+ 1566  tr -cs 'a-zA-Z0-9' '\n' <730-0.txt | sort  | uniq -c | sort -nr
+ 1567  tr -cs 'a-zA-Z0-9' '\n' <730-0.txt | sort  | uniq -c | sort -nr | head -n 12
+ 1568  tr -cs 'a-zA-Z0-9' '\n' <730-0.txt | sort  | uniq -c | sort -nr | head -n 20
+ 1569  tr -cs 'a-zA-Z0-9' '\n' <730-0.txt | sort  | uniq -c | sort -nr | head -n 30
+ 1570  grep -oE '[[:alpha:]]+' text.txt | sort | uniq -c | sort -nr
+ 1571  grep -oE '[[:alpha:]]+' 730-0.txt | sort | uniq -c | sort -nr
+ 1572  grep -oE '[[:alpha:]]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12
+ 1573  tr -cs 'a-zA-Z0-9' '\n' <730-0.txt | sort  | uniq -c | sort -nr | head -n 12
+ 1574  tr -cs 'a-zA-Z0-9' '\n' <730-0.txt | sort  | uniq -c | sort -nr | grep "you?"
+ 1575  tr -cs 'a-zA-Z0-9' '\n' <730-0.txt | sort  | uniq -c | sort -nr | grep "you"
+ 1576  tr -cs 'a-zA-Z0-9' '\n' <730-0.txt | sort  | uniq -c | sort -nr | grep "?"
+ 1577  grep -oE '[[:alpha:]]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12shu
+ 1578  shutdown +0
+ 1579  cd BIG/clothes/mango/
+ 1580  ls -la
+ 1581  cat 730-0.txt 
+ 1582  ls -la
+ 1583  grep -oE '[[:alpha:]]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12shu
+ 1584  grep -oE '[[:alpha:]]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12
+ 1585  grep -oE '[[:a-zA-z:]]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12
+ 1586  grep -oE '[[:a-z,A-z:]]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12
+ 1587  grep -oE '[[:alpha:]]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12
+ 1588  grep -oE '[[:alpha:]]+' 730-0.txt 
+ 1589  grep -oE '[[:alpha:]]+' 730-0.txt | sort 
+ 1590  grep -oE '[[:alpha:]]+' 730-0.txt | sort | uniq -c
+ 1591  grep -oE '[[:alpha:]]+' 730-0.txt | sort | uniq -c | sort -nr 
+ 1592  grep -oE '[[:alpha:]]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12
+ 1593  grep -oE '[[:alpha:]]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 20
+ 1594  find . -type f -perm -u=w
+ 1595  find . -type f -perm -g=w
+ 1596  grep -oE '[[:a-z:]]+' 730-0.txt |
+ 1597  grep -oE '[[a-z]]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12
+ 1598  grep -oE '[[A-Z]]+' 730-0.txt 
+ 1599  grep -oE '[[:alpha:]]+' 730-0.txt 
+ 1600  grep -oE '[A-Z]+' 730-0.txt 
+ 1601  grep -oE '[[:alpha:]]+' 730-0.txt 
+ 1602  grep -oE '[[alpha]]+' 730-0.txt 
+ 1603  grep -oE '[[:alpha:]]+' 730-0.txt 
+ 1604  cd
+ 1605  ls aws
+ 1606  ls
+ 1607  mkdir AWS/{DB/{RDS,DynamoDB},Deployment_model/{S3,Hybrid,Redshift,cloud}}
+ 1608  mkdir -p AWS/{DB/{RDS,DynamoDB},Deployment_model/{S3,Hybrid,Redshift,cloud}}
+ 1609  tree AWS/
+ 1610  cd AWS/Deployment_model/Hybrid/
+ 1611  mv ../Hybrid/ ../../DB/
+ 1612  pwd
+ 1613  cd ..
+ 1614  ls
+ 1615  cd ..
+ 1616  tree
+ 1617  mv Deployment_model/S3/ Deployment_model/on-permise
+ 1618  tree
+ 1619  cp DB/ Deployment_model/
+ 1620  cp -r DB/ Deployment_model/
+ 1621  tree
+ 1622  cd
+ 1623  cd BIG/clothes/mango/
+ 1624  grep -oE '[A-Za-z]+' 730-0.txt 
+ 1625  grep -oE '[[:alpha:]]+' 730-0.txt
+ 1626  grep -oE '[A-Za-z]+' 730-0.txt 
+ 1627  grep -oE '[A-Za-z]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12
+ 1628  grep -oE '[A-Za-z]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12 >> linux.txt
+ 1629  ls l
+ 1630  ls -l
+ 1631  cat linux.txt 
+ 1632  history | grep git
+ 1633  grep -oE '[A-Za-z]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12
+ 1634  grep -oE '[[:alpha:]]+' 730-0.txt | sort | uniq -c | sort -nr | head -n 12
+ 1635  cat linux.txt 
+ 1636  shutdown +0
+ 1637  echo "Hello hello World world" 
+ 1638  echo "Hello hello World world" | tr [:upper:] [:lower:]
+ 1639  echo "Hello hello World world" | tr [:lower:] [:upper:] | 
+ 1640  echo "Hello hello World world" | tr [:upper:] [:lower:] | tr '[:alnum:]'
+ 1641  echo "Hello hello World world" | tr [:upper:] [:lower:] | tr '[:alnum:]' '\n\
+ 1642  echo "Hello hello World world" | tr [:upper:] [:lower:] | tr '[:alnum:]' '\n'
+ 1643  echo "Hello hello World world" | tr [:upper:] [:lower:] | tr '[:alnum:]' 'n'
+ 1644  echo "Hello hello World world 78" | tr [:upper:] [:lower:] | tr '[:alnum:]' 'n'
+ 1645  echo "Hello hello World world 78" | tr [:upper:] [:lower:] | tr '[:alnum:]' '\n'
+ 1646  echo "Hello hello World world 78 - ? @" | tr [:upper:] [:lower:] | tr '[:alnum:]' '\n'
+ 1647  echo "Hello hello World world 78 - ? @" | tr -c [:upper:] [:lower:] | tr '[:alnum:]' '\n'
+ 1648  echo "Hello hello World world 78 - ? @" | tr [:upper:] [:lower:] | tr -c '[:alnum:]' '\n'
+ 1649  echo "Helloecho "Hello hello World world 78 - ? @" | tr [:upper:] [:lower:] | tr -c '[:alnum:]' '\n' hello World world5 78 - ? @" | tr [:upper:] [:lower:] | tr -c '[:alnum:]' '\n'
+ 1650  echo "Hello hello World world 78 - ? @" | tr [:upper:] [:lower:] | tr -dc '[:alnum:]' '\n'
+ 1651  echo "Hello hello World world 78 - ? @" | tr [:upper:] [:lower:] | tr -sc '[:alnum:]' '\n'
+ 1652  echo "Hello hello World world 78 - ? @" | tr [:upper:] [:lower:] | tr -c '[:alnum:]' '\n'
+ 1653  echo "Hello hello World world 78 - ? @" | tr [:upper:] [:lower:] | tr -sc '[:alnum:]' '\n'
+ 1654  echo "aaaabbbb___dddeee" | tr -s [:lower:]
+ 1655  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20
+ 1656  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:lower:] [:upper:]
+ 1657  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:][:lower:]
+ 1658  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:]
+ 1659  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alunum:] 
+ 1660  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alnum:] 
+ 1661  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alnum:] '\n'
+ 1662  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -c [:alnum:] '\n'
+ 1663  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alnum:] '\n'
+ 1664  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20
+ 1665  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alnum:] '\n' | sort | uniq
+ 1666  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alnum:] '\n' | sort | uniq -c
+ 1667  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alnum:] '\n' | sort | uniq -c | sort -nr
+ 1668  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alnum:] '\n' | sort | uniq
+ 1669  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alnum:] '\n' | sort | uniq -c | -nr
+ 1670  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20
+ 1671  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alnum:] '\n' | sort | uniq -c | sort -nr
+ 1672  tr --help
+ 1673  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alnum:] '\n' | sort | uniq -c | sort -nr
+ 1674  curl -s https://www.gutenberg.org/files/730/730-0.txt | head -n 20| tr [:upper:] [:lower:] | tr -cs [:alnum:] '\n' | sort | uniq -c | sort -nrs
+ 1675  sort --help
+ 1676  shutdown +0
+ 1677  id
+ 1678  id mottybar 
+ 1679  userdel --help
+ 1680  grep motty /etc/passwd
+ 1681  grep root /etc/passwd
+ 1682  cat /etc/passwd
+ 1683  cat /etc/login.defs 
+ 1684  sudo useradd -m bababutt
+ 1685  id bababutt 
+ 1686  ls /home/
+ 1687  grep babu /etc/shadow
+ 1688  sudo babu /etc/shadow
+ 1689  sudo grep babu /etc/shadow
+ 1690  sudo passwd bababutt 
+ 1691  sudo grep babu /etc/shadow
+ 1692  chage -m 5 -M 90 -W 10 -I 3 bababutt 
+ 1693  sudo chage -m 5 -M 90 -W 10 -I 3 bababutt 
+ 1694  grep babu /etc/shadow
+ 1695  sudo grep babu /etc/shadow
+ 1696  su - bababutt 
+ 1697  su - bababutt
+ 1698  sudo passwd bababutt 
+ 1699  su - bababutt
+ 1700  dmidecode
+ 1701  fsdisk
+ 1702  fdisk
+ 1703  fdisk -i
+ 1704  fdisk --help
+ 1705  su -
+ 1706  sudo passwd root
+ 1707  su -
+ 1708  fdisk -l
+ 1709  sudo cat /etc/group
+ 1710  visudo
+ 1711  su -
+ 1712  who
+ 1713  last
+ 1714  last | awk '{print $1}'
+ 1715  last | awk '{print $1}' | sort | uniq
+ 1716  su bababutt 
+ 1717  last | awk '{print $1}' | sort | uniq
+ 1718  id
+ 1719  id bababutt 
+ 1720  who
+ 1721  user
+ 1722  users
+ 1723  ifconfig
+ 1724  users
+ 1725  wall
+ 1726  write bababutt 
+ 1727  sudowrite bababutt 
+ 1728  sudo write bababutt 
+ 1729  write bababutt 
+ 1730  sudo write bababutt 
+ 1731  users
+ 1732  write bababutt 
+ 1733  w
+ 1734  y
+ 1735  mesg
+ 1736  mesg y
+ 1737  mesg
+ 1738  mesg y
+ 1739  mesg n
+ 1740  sudo write bababutt 
+ 1741  write bababutt 
+ 1742  mesg y
+ 1743  write bababutt 
+ 1744  who
+ 1745  ifconfig 
+ 1746  write bababutt 
+ 1747  who
+ 1748  users
+ 1749  shutdown +0
+ 1750  w
+ 1751  write mottybar pts/1 
+ 1752  write mottybar tty2 
+ 1753  mesg n
+ 1754  mesg y
+ 1755  write mottybar tty2 
+ 1756  exit
+ 1757  who
+ 1758  ifconfig
+ 1759  write bababutt 
+ 1760  who
+ 1761  write bababutt pts/1 
+ 1762  who -T
+ 1763  w
+ 1764  sudo apt update -y
+ 1765  sudo apt upgrade -y
+ 1766  write bababutt pts/1 
+ 1767  w
+ 1768  write mottybar pts/1 
+ 1769  mesg n
+ 1770  mesg y
+ 1771  write mottybar pts/1 
+ 1772  ls -lL /usr/bin/write /usr/bin/wall
+ 1773  w
+ 1774  who
+ 1775  clear
+ 1776  date
+ 1777  uptime
+ 1778  hostname
+ 1779  uname
+ 1780  uname -a
+ 1781  which pwd
+ 1782  ls -l /usr/bin/pwd
+ 1783  which date
+ 1784  cd usr/bin
+ 1785  cd /usr/bin
+ 1786  ls -l
+ 1787  ls -l | more
+ 1788  ls -l | wc -l
+ 1789  cal
+ 1790  sudo apt install ncal
+ 1791  cal
+ 1792  cal 9 1977
+ 1793  cal 2016
+ 1794  clear
+ 1795  bc 
+ 1796  ls -l | more
+ 1797  ls -l | grep pwd
+ 1798  sudo cat pwd
+ 1799  clear
+ 1800  top
+ 1801  ps
+ 1802  ps -a
+ 1803  ps -au
+ 1804  ps -aux
+ 1805  systemctl list-units -all
+ 1806  clear
+ 1807  su -
+ 1808  kill -l
+ 1809  systemctl status firewalld.service 
+ 1810  kill 841
+ 1811  su -
+ 1812  clear
+ 1813  systemctl status crond
+ 1814  crontab
+ 1815  cronta
+ 1816  systemctl status cron
+ 1817  clear
+ 1818  systemctl status crond
+ 1819  crontab -e
+ 1820  date
+ 1821  crontab -e
+ 1822  date
+ 1823  crontab -e
+ 1824  ls -ltr
+ 1825  cat crontab-entry 
+ 1826  crontab -l
+ 1827  crontab -r
+ 1828  crontab -l
+ 1829  crond
+ 1830  sudo apt install crond
+ 1831  shutdown +0
+ 1832  cat /etc/hostname
+ 1833  hostname
+ 1834  uname -a
+ 1835  su -
+ 1836  arch
+ 1837  uname -a
+ 1838  top
+ 1839  clear
+ 1840  ls -ltr
+ 1841  whoami
+ 1842  ls -l /tmp
+ 1843  clear
+ 1844  ls -l /tmp
+ 1845  exit
+ 1846  ls -ltr
+ 1847  cd /etc
+ 1848  clear
+ 1849  pwd
+ 1850  history 
+ 1851  cd 
+ 1852  ls -ltr
+ 1853  cat logfile-activity.log 
+ 1854  exit
+ 1855  script logfile-activity.log
+ 1856  clear
+ 1857  more logfile-activity.log 
+ 1858  rm logfile-activity.log 
+ 1859  ls -ltr
+ 1860  shutdown +0
+ 1861  env
+ 1862  echo $SHELL
+ 1863  echo $shell
+ 1864  printenv
+ 1865  printenv | more
+ 1866  printenv | grep HISTORY
+ 1867  printenv | grep HIST
+ 1868  printenv | grep SIZE
+ 1869  env | grep SIZE
+ 1870  env | grep HIST
+ 1871  env | grep hist
+ 1872  env | grep MAIL
+ 1873  env | grep HOME
+ 1874  echo $HOME
+ 1875  echo $MAIL
+ 1876  vi /etc/profile
+ 1877  vi /etc/bashrc
+ 1878  ls .bashrc 
+ 1879  ls -la 
+ 1880  vi .bashrc 
+ 1881  shutdown +0
+ 1882  ifconfig
+ 1883  ethtool ens33
+ 1884  ifconfig
+ 1885  ethtool lo
+ 1886  su -
+ 1887  clear
+ 1888  echo $username
+ 1889  env
+ 1890  echo $USERNAME
+ 1891  su bababutt 
+ 1892  su passwd bababutt 
+ 1893  sudo passwd bababutt 
+ 1894  su bababutt 
+ 1895  su - bababutt 
+ 1896  echo $USER
+ 1897  echo $USERNAME
+ 1898  env
+ 1899  su - bababutt 
+ 1900  export mylasatname = Bar
+ 1901  export mylasatname=Bar
+ 1902  echo $mylastname
+ 1903  env
+ 1904  echo $mylastname
+ 1905  echo $mylasatname
+ 1906  unset -f mylasatname 
+ 1907  env
+ 1908  export mylastname=Bar
+ 1909  echo $mylastname
+ 1910  unset --hel
+ 1911  env
+ 1912  export mylastname=James
+ 1913  env
+ 1914  unset -f mylastname
+ 1915  env
+ 1916  env | grep mylast
+ 1917  unset -f mylastname
+ 1918  env | grep mylast
+ 1919  unset -f mylastname
+ 1920  env | grep mylast
+ 1921  unset -f mylastname=James
+ 1922  env | grep mylast
+ 1923  unset -f mylastname
+ 1924  env | grep mylast
+ 1925  unset mylastname
+ 1926  env | grep 
+ 1927  env | grep mylast
+ 1928  export mylastname=Bar
+ 1929  env | grep mylast
+ 1930  $mylastname = James
+ 1931  mylastname=James
+ 1932  env | grep mylast
+ 1933  unset mylastname
+ 1934  env | grep mylast
+ 1935  alias lsd="ls -la"
+ 1936  alias
+ 1937  alias update="sudo apt update"
+ 1938  alias
+ 1939  alias docs="cd ~/Documents"
+ 1940  alias
+ 1941  alias dl="cd ~/Downloads"
+ 1942  alias rm="rm -i"
+ 1943  alias cp="cp -i"
+ 1944  alias
+ 1945  reboot
+ 1946  alias
+ 1947  vi .bashrc 
+ 1948  cp .bashrc bashrc.orig
+ 1949  ls -la ltr
+ 1950  ls -ltr
+ 1951  ls -ltra
+ 1952  vi .bashrc 
+ 1953  pwd
+ 1954  vi .bashrc 
+ 1955  alias
+ 1956  exit
+ 1957  alias
+ 1958  ping -c 3 google.com
+ 1959  ss
+ 1960  ss | head -n 2
+ 1961  ss | head -n 5
+ 1962  netstat -rbn
+ 1963  netstat -rn
+ 1964  ls
+ 1965  rm entry-hello.txt 
+ 1966  ls
+ 1967  vi .bashrc 
+ 1968  netstat -t
+ 1969  netstat -tulpn
+ 1970  netstat 
+ 1971  netstat -t
+ 1972  netstat --help
+ 1973  netstat -T
+ 1974  netstat -t
+ 1975  ss
+ 1976  curl --help
+ 1977  curl -o olive.jpg https://www.finedininglovers.com/sites/g/files/xknfdk626/files/styles/article_1200_800/public/2023-02/olive-varieties%C2%A9iStock.jpg.webp?itok=Ir2Zulsb
+ 1978  ls -la
+ 1979  olive.jpg
+ 1980  open olive.jpg 
+ 1981  netstat -tl
+ 1982  vi .bashrc 
+ 1983  wget --help
+ 1984  netstat -tl | head -n 10
+ 1985  alias firstports="netstat -tl"
+ 1986  firstports 
+ 1987  alias
+ 1988  vi .bashrc 
+ 1989  alias 
+ 1990  history | grep unset
+ 1991  ls -la
+ 1992  ls -l
+ 1993  rm -r grocery/
+ 1994  mkdir -p grocery/{bakery/bread/{focaccia,cholla},drinks/juices/{Pepsi,Coke}}
+ 1995  tree grocery/
+ 1996  touch Coke_not_healthy grocery/drinks/juices/Coke/
+ 1997  tree grocery/
+ 1998  ls
+ 1999  rm Coke_not_healthy 
+ 2000  ls
+ 2001  touch grocery/drinks/juices/Coke/Coke_not_healthy
+ 2002  tree grocery/
+ 2003  chmod 555 grocery/drinks/juices/Coke/Coke_not_healthy 
+ 2004  ls -la grocery/drinks/juices/Coke/
+ 2005  touch grocery/drinks/juices/Pepsi/Pepsi_zero
+ 2006  tree grocery/
+ 2007  chmod 775 grocery/drinks/juices/Pepsi/Pepsi_zero 
+ 2008  ls -l grocery/drinks/juices/Pepsi/Pepsi_zero 
+ 2009  cd grocery/drinks/juices/Pepsi/ 
+ 2010  cd -
+ 2011  find grocery/bakery/bread/ -type d -exec cp Pepsi_Zero {} \;
+ 2012  tree grocery/
+ 2013  find grocery/bakery/bread/ -type d -exec cp grocery/drinks/juices/Pepsi/Pepsi_zero {} \;
+ 2014  tree grocery/
+ 2015  rm grocery/bakery/bread/cholla/Pepsi_zero 
+ 2016  rm grocery/bakery/bread/focaccia/Pepsi_zero 
+ 2017  rm grocery/bakery/bread/Pepsi_zero 
+ 2018  tree grocery/
+ 2019  find grocery/bakery/bread/* -type d -exec cp grocery/drinks/juices/Pepsi/Pepsi_zero {} \;
+ 2020  tree grocery/
+ 2021  mv grocery/bakery/bread/cholla/ grocery/bakery/bread/Petta
+ 2022  tree grocery/
+ 2023  mv grocery/bakery/bread/Petta/ grocery/drinks/
+ 2024  tree grocery/
+ 2025*  grocery/bakery/bread/Petta/ 
+ 2026  tree grocery/
+ 2027  rm -r grocery/
+ 2028  tree grocery/
+ 2029  ks
+ 2030* ls 
+ 2031  mkdir -p grocery/{bakery/bread/{focaccia,cholla},drinks/juices/{Pepsi,Coke}}
+ 2032  tree grocery/
+ 2033  touch grocery/drinks/juices/Coke/Coke_not_healthy
+ 2034  chmod 555 grocery/drinks/juices/Coke/Coke_not_healthy 
+ 2035  touch grocery/drinks/juices/Pepsi/Pepsi_zero
+ 2036  chmod 775 grocery/drinks/juices/Pepsi/Pepsi_zero 
+ 2037  tree grocery/
+ 2038  find grocery/bakery/bread/* -type d -exec cp grocery/drinks/juices/Pepsi/Pepsi_zero {} \;
+ 2039  tree grocery/
+ 2040  mv grocery/bakery/bread/cholla/ grocery/bakery/bread/Petta
+ 2041  tree grocery/
+ 2042  mv grocery/bakery/bread/Petta/ grocery/drinks/
+ 2043  tree grocery/
+ 2044  mv grocery/drinks/Petta/
+ 2045  tree grocery/
+ 2046  mv grocery/drinks/Petta/ grocery/bakery/bread
+ 2047  tree grocery/
+ 2048  history 
+ 2049  tree grocery/
+ 2050  rm -r grocery/
+ 2051  ls -l grocery/drinks/juices/Coke/
+ 2052  rm -r grocery/
+ 2053  mkdir setgid_hands_on 
+ 2054  cd setgid_hands_on/
+ 2055  mkdir "shared directory"
+ 2056  tree 
+ 2057  useradd --help
+ 2058  clear
+ 2059  useradd --help
+ 2060  useradd user1 -s /bin/bash
+ 2061  where usedadd
+ 2062  which usedadd
+ 2063  locate usedadd
+ 2064  locate userdadd
+ 2065  locate useradd
+ 2066  which useradd
+ 2067  ls -l /usr/sbin/useradd 
+ 2068  useradd user1 -s /bin/bash
+ 2069  sudo useradd user1 -s /bin/bash
+ 2070  sudo useradd user2 -s /bin/bash
+ 2071  sudo useradd user3 -s /bin/bash
+ 2072  cat /etc/passwd | awk '{ print $1}'
+ 2073* cat /etc/passwd | awk '{ print $1}' 
+ 2074  awk -F':' '{ print $1}' /etc/passwd
+ 2075  groupadd file_sharing_group 
+ 2076  which groupadd
+ 2077  ls -l /usr/sbin/groupadd 
+ 2078  sudo groupadd file_sharing_group 
+ 2079  awk -F':' '{ print $1}' /etc/group
+ 2080  usermod user1 aG file_sharing_group
+ 2081  history | grep usermod
+ 2082  usermod user1 -aG file_sharing_group
+ 2083  sudo usermod user1 -aG file_sharing_group
+ 2084  sudo usermod user2 -aG file_sharing_group
+ 2085  sudo usermod user3 -aG file_sharing_group
+ 2086  cat /etc/group
+ 2087  chmod g+s "shared directory"
+ 2088  ls -la
+ 2089  chgrp "shared directory" file_sharing_group
+ 2090* 
+ 2091  sudo chgrp "shared directory" file_sharing_group
+ 2092  chgrp --help
+ 2093  sudo chgrp file_sharing_group "shared directory"
+ 2094  ls -la
+ 2095  sudo chgrp mottybar "shared directory"
+ 2096  ls -la
+ 2097  sudo passwd user1
+ 2098  su user1
+ 2099  ls -la
+ 2100  chmod g-s "shared directory"
+ 2101  ls -la
+ 2102  chmod g+s "shared directory"
+ 2103  ls -la
+ 2104  sudo chgrp file_sharing_group "shared directory"
+ 2105  ls -la
+ 2106  su user1
+ 2107  chmod g-s "shared directory"
+ 2108  ls -la
+ 2109  su user1
+ 2110  ls -la
+ 2111  chmod g+s "shared directory"
+ 2112  ls -la
+ 2113  chmod g+s "shared directory"
+ 2114  ls -la
+ 2115  sudo chgrp mottybar "shared directory"
+ 2116  ls -la
+ 2117  chmod g+s "shared directory"
+ 2118  ls -la
+ 2119  cd shared\ directory/
+ 2120  nano helloworld.sh
+ 2121  ls -l
+ 2122  chmod g+x helloworld.sh 
+ 2123  ls -l
+ 2124  chmod g+s helloworld.sh 
+ 2125  ls -l
+ 2126  ./helloworld.sh
+ 2127  chmod u+x helloworld.sh 
+ 2128  ./helloworld.sh
+ 2129  ls -l
+ 2130  su user1
+ 2131  ls -l
+ 2132  chmod g-s helloworld.sh 
+ 2133  ls -l
+ 2134  chmod u+s helloworld.sh 
+ 2135  ls -l
+ 2136  su user1
+ 2137  ls -l
+ 2138  chmod g+s helloworld.sh 
+ 2139  ls -l
+ 2140  su user1
+ 2141  ls -l
+ 2142  su user1
+ 2143  ls -l /usr/bin/passwd
+ 2144  chmod o+s helloworld.sh 
+ 2145  ls -l
+ 2146  chmod o+x helloworld.sh 
+ 2147  ls -l
+ 2148  chmod o+s helloworld.sh 
+ 2149  ls -l
+ 2150  su user1
+ 2151  chmod o+t helloworld.sh 
+ 2152  ls -l
+ 2153  su user1
+ 2154  ls -l
+ 2155  chmod o-t helloworld.sh 
+ 2156  ls -l
+ 2157  chmod u-s,g-s helloworld.sh 
+ 2158  ls -l
+ 2159  su user1
+ 2160  ls -l
+ 2161  history 
+ 2162  cat /etc/group
+ 2163  history | grep chmod
+ 2164  history | grep chmod g+s
+ 2165  history | grep "chmod g+s"
+ 2166  history | grep chgrp
+ 2167  rm *
+ 2168  ls -l
+ 2169  cd ..
+ 2170  ls -l
+ 2171  chmod o-x "shared directory"/
+ 2172  ls -l
+ 2173  chmod g-s helloworld.sh 
+ 2174  chmod g-s "shared directory"/
+ 2175  ls -l
+ 2176  file_sharing_group "shared directory"/
+ 2177  chgrp file_sharing_group "shared directory"/
+ 2178  sudo chgrp file_sharing_group "shared directory"
+ 2179  ls -l
+ 2180  su user1
+ 2181  ls -l
+ 2182  sudo chgrp mottybar "shared directory"
+ 2183  ls -l
+ 2184  find / -perm /6000 -type f
+ 2185  ls -l
+ 2186  cd "shared directory"/
+ 2187  nano hw.sh
+ 2188  ls -l
+ 2189  cd ..
+ 2190  ls -l
+ 2191  chmod g+s "shared directory"/
+ 2192  ls -l
+ 2193  ls -l "shared directory"/
+ 2194  chmod u+x,g+x shared\ directory/hw.sh 
+ 2195  ls -l "shared directory"/
+ 2196  cd "shared directory"/
+ 2197  ./hw.sh 
+ 2198  su user1
+ 2199  chmod g+s shared\ directory/hw.sh 
+ 2200  chmod g+s hw.sh 
+ 2201  ls -l
+ 2202  su user1
+ 2203  sudo chgrp file_sharing_group "shared directory"
+ 2204  ls -l
+ 2205  ls -l ..
+ 2206  cd .
+ 2207  cd ..
+ 2208  ls -l
+ 2209  sudo chgrp file_sharing_group "shared directory"
+ 2210  ls -l
+ 2211  ls -l "shared directory"/
+ 2212  su user1
+ 2213  sudo chgrp file_sharing_group shared\ directory/hw.sh 
+ 2214  cd "shared directory"/
+ 2215* ch 
+ 2216  chmod g+s hw.sh 
+ 2217  ls -l
+ 2218  chmod g-x hw.sh 
+ 2219  chmod g+s hw.sh 
+ 2220  ls -l
+ 2221  chmod g+xs hw.sh 
+ 2222  ls -l
+ 2223  su user1
+ 2224  sudo chgrp mottybar shared\ directory/hw.sh 
+ 2225  sudo chgrp mottybar hw.sh 
+ 2226  ls -l
+ 2227  chmod g+s hw.sh 
+ 2228  ls -l
+ 2229  su user1
+ 2230  chmod o+x hw.sh 
+ 2231  ls -l
+ 2232  su user1
+ 2233  ls -l
+ 2234  chmod g-s hw.sh 
+ 2235  ls -l
+ 2236  chmod u+s hw.sh 
+ 2237  ls -l
+ 2238  whoami
+ 2239  su user1
+ 2240  ls -l
+ 2241  chmod u-s hw.sh 
+ 2242  chmod g+s hw.sh 
+ 2243  ls -l
+ 2244  chgrp file_sharing_group "shared directory"/
+ 2245  ls
+ 2246  ls -l
+ 2247  chgrp --help
+ 2248  chgrp file_sharing_group hw.sh 
+ 2249  which chgroup
+ 2250  which chgrp
+ 2251  ls -l /usr/bin/chgrp
+ 2252  sudo chgrp file_sharing_group hw.sh 
+ 2253  ls -l 
+ 2254  chmod g+s hw.sh 
+ 2255  ls -l 
+ 2256  chmod g-x hw.sh 
+ 2257  chmod g+s hw.sh 
+ 2258  chmod g-x hw.sh 
+ 2259  ls -l 
+ 2260  chmod g+s hw.sh 
+ 2261  ls -l 
+ 2262  chmod g+x hw.sh 
+ 2263  ls -l 
+ 2264  chmod u+s hw.sh 
+ 2265  ls -l 
+ 2266  chmod u-s hw.sh 
+ 2267  ls -l 
+ 2268  chmod g+s hw.sh 
+ 2269  ls -l 
+ 2270  sudo chgrp mottybar hw.sh 
+ 2271  ls -l 
+ 2272  chmod g+s hw.sh 
+ 2273  ls -l 
+ 2274  su user1
+ 2275  cd 
+ 2276  find / -perm /6000 -type f
+ 2277  sudo find / -perm /6000 -type f
+ 2278  sudo find / -perm /6000 -type f | grep passwd
+ 2279  sudo find / -perm /6000 -type f | grep wall
+ 2280  sudo find / -perm /6000 -type f | grep locate
+ 2281  ls -l /usr/bin/plocate
+ 2282  locate
+ 2283  locate ifconfig
+ 2284  ls -l /usr/bin/plocate
+ 2285  plocate
+ 2286  plocate ifconfig
+ 2287  clear
+ 2288  ls
+ 2289  cd git-practice/
+ 2290  ls
+ 2291  cd ..
+ 2292  cd git-basics-practice/
+ 2293  ls
+ 2294  git pull origin main
+ 2295  ls
+ 2296  cat daily04 
+ 2297  history >> daily04 
