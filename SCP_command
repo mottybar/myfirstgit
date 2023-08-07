@@ -1,1 +1,4 @@
-
+Hello from Windows
+Hello from Linux
+scp "mottybar@192.168.197.129:/home/mottybar/simple.txt" "E:\AWS reStart Bootcamp"
+scp ‪"E:\AWS reStart Bootcamp\simple.txt" "mottybar@192.168.197.129:/home/mottybar"
